@@ -16,3 +16,25 @@ public class Find{
         obj1.oddoreven(number);
     }
 }
+*********************************************************************
+import java.util.Scanner;
+public class School{
+    String passorfail(int value){
+        if(value<35){
+            return"fail";
+        }
+        else{
+            return"pass";
+        }
+        
+    }
+    
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int totalmark=sc.nextInt();
+        School obj1=new School();
+        String result= obj1.passorfail(totalmark);
+        System.out.println(result);
+        
+    }
+}
