@@ -1,0 +1,58 @@
+import java.util.*;
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter1:");
+        int a=sc.nextInt();
+        System.out.println("Enter2:");
+        int b=sc.nextInt();
+        int arr1[]=new int[a];
+        int arr2[]=new int[b];
+
+
+
+        int rev1=0;
+        int rev2=0;
+        int rev3=0;
+        int x=0;
+        int y=0;
+        for(int i=0;i<a;i++)
+        {
+            arr1[i]=sc.nextInt();
+            int e=arr1[i];
+            while(e!=0){
+                int d1=e%10;
+                rev1=rev1*10+d1;
+                e/=10;
+            }
+                x=rev1;
+        }   
+
+            
+            for(int j=0;j<a;j++)
+            {
+            arr1[j]=sc.nextInt();
+            int f=arr1[j];
+            while(f!=0){
+                int d2=f%10;
+                rev2=rev2*10+d2;
+                f/=10;
+            }
+              y=rev2;
+ 
+            }
+          int w=x+y;
+          while(w!=0){
+              int d3=w%10;
+              rev3=rev3*10+d3;
+              w/=10;
+          }
+          System.out.println(rev3);
+          
+        }
+        
+
+        
+    }
+
